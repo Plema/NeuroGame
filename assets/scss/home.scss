@@ -713,7 +713,7 @@
 }
 
 .programs {
-    padding: 8px 0 20px;
+    padding: 8px 0 55px;
     .title{
         text-align: center;
         position: relative;
@@ -815,6 +815,12 @@
                 z-index: -1;
                 opacity: 0 !important;
             }
+        }
+        .sliders{
+            display: none;
+        }
+        .sliders.active{
+            display: block;
         }
         .programs-slider{
             margin-bottom: 20px;
@@ -1024,7 +1030,7 @@
         }
     }
     @media (min-width: 768px) {
-        padding: 20px 0 30px;
+        padding: 20px 0 80px;
         .title {
             padding-bottom: 13px;
             h2 {
@@ -1123,7 +1129,7 @@
         }
     }
     @media (min-width: 1024px) {
-        padding: 25px 0 60px;
+        padding: 25px 0 100px;
         .title {
             text-align: left;
             margin-bottom: 30px;
@@ -1156,7 +1162,7 @@
         }
     }
     @media (min-width: 1280px) {
-        padding: 30px 0 80px;
+        padding: 30px 0 120px;
         .title {
             margin-bottom: 40px;
             h2 {
@@ -1176,7 +1182,7 @@
         }
     }
     @media (min-width: 1400px) {
-        padding: 40px 0 90px;
+        padding: 40px 0 150px;
         .title {
             margin-bottom: 50px;
             h2 {

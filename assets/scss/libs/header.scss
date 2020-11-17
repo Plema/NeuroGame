@@ -380,18 +380,6 @@
                         line-height: 22px;
                         position: relative;
                         margin-right: 10px;
-                        padding-right: 10px;
-                        &::after{
-                            content: '\E80B';
-                            top: 50%;
-                            right: 0;
-                            font-size: 4px;
-                            color: #FFFFFF;
-                            line-height: 8px;
-                            position: absolute;
-                            font-family: 'fontello';
-                            transform: translate(0, -50%);
-                        }
                     }
                 }
             }
@@ -463,10 +451,6 @@
                     span {
                         font-size: 16px;
                         line-height: 24px;
-                        padding-right: 15px;
-                        &::after{
-                            font-size: 6px;
-                        }
                     }
                 }
             }
@@ -541,9 +525,6 @@
                 }
                 .personal-area {
                     margin-right: 82px;
-                    span{
-                        padding-right: 21px;
-                    }
                     i {
                         width: 40px;
                         height: 40px;

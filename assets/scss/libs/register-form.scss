@@ -1,0 +1,232 @@
+.register-form {
+    padding-bottom: 35px;
+    .register-content{
+        position: relative;
+        border-radius: 20px;
+        padding: 31px 33px 30px;
+        background: url('../img/register-content-bg.png') no-repeat 18% 50%;
+        background-size: cover;
+        &::after{
+            content: '';
+            left: 50%;
+            z-index: -1;
+            width: 320px;
+            height: 78px;
+            bottom: -40px;
+            position: absolute;
+            background: url('../img/register-content-after-mobile.png') no-repeat 50% 50%;
+            background-size: cover;
+            transform: translate(-50%,0);
+        }
+        .text{
+            margin-bottom: 32px;
+            h4{
+                font-size: 24px;
+                color: #FFFFFF;
+                font-weight: 400;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 18px;
+                color: #FFFFFF;
+                line-height: 16px;
+            }
+        }
+        form{
+            input{
+                width: 100%;
+                height: 30px;
+                border: none;
+                font-size: 18px;
+                color: #FFFFFF;
+                margin-bottom: 35px;
+                background: transparent;
+                border-bottom: 2px solid #FFFFFF;
+            }
+            input::placeholder{
+                color: #FFFFFF;
+            }
+            button{
+                margin: 0 auto;
+                display: table;
+                position: static;
+                border-radius: 30px;
+                background: #EDF3FB;
+                background: #ffffff;
+                padding: 10px 44px 7px 25px;
+                border: 2px solid #ffffff;
+                transform: translate(-3px, 0);
+                transition: all 0.3s;
+                &:hover{
+                    background: #F14942;
+                    border: 2px solid #F14942;
+                    span{
+                        color: #FFFFFF;
+                        i{
+                            background: #ffffff;
+                            box-shadow: 0 4px 4px #DC1C14;
+                            &::before{
+                                color: #F14942;
+                                transform: translate(-50%, -50%) rotate(90deg);
+                            }
+                        }
+                    }
+                }
+                span{
+                    font-size: 16px;
+                    color: #F14942;
+                    line-height: 22px;
+                    position: relative;
+                    padding-right: 14px;
+                    display: inline-block;
+                    transition: all 0.3s;
+                    i{
+                        top: 45%;
+                        width: 26px;
+                        height: 26px;
+                        right: -30px;
+                        position: absolute;
+                        border-radius: 50%;
+                        background: #F14942;
+                        box-shadow: 0px 4px 4px rgba(220, 28, 20, 0.33);
+                        transform: translate(0, -50%);
+                        transition: all 0.3s;
+                        &::before{
+                            top: 50%;
+                            left: 50%;
+                            font-size: 14px;
+                            color: #FFFFFF;
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .register-content {
+            form {
+                margin: 0 -2%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                input{
+                    width: 46%;
+                    margin: 0 2% 30px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        .register-content {
+            &::after {
+                width: 880px;
+                height: 90px;
+                background: url('../img/register-content-after.png') no-repeat 50% 50%;
+                background-size: cover;
+            }
+            .text {
+                h4 {
+                    font-size: 28px;
+                    line-height: 32px;
+                    margin-bottom: 10px;
+                }
+            }
+            form {
+                margin: 0;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                input {
+                    width: 20%;
+                    margin: 0 20px;
+                }
+                button{
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1280px) {
+        .register-content{
+            display: flex;
+            align-items: center;
+            padding: 42px 35px 42px;
+            justify-content: space-between;
+            &::after {
+                width: 1080px;
+                height: 100px;
+                bottom: -50px;
+            }
+            .text{
+                width: 41%;
+                margin-bottom: 0;
+                h4 {
+                    font-size: 32px;
+                    line-height: 36px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+            form{
+                width: 58%;
+                justify-content: flex-end;
+                input{
+                    width: 28%;
+                    margin: 0 10px;
+                }
+                button{
+                    margin-right: 0;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        padding-bottom: 50px;
+        .register-content{
+            padding: 56px 55px 48px 58px;
+            &::after {
+                bottom: -50px;
+                width: 1216px;
+                height: 120px;
+            }
+            .text {
+                margin-bottom: 12px;
+                h4 {
+                    font-size: 35px;
+                    line-height: 38px;
+                    margin-bottom: 12px;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+            }
+            form{
+                input {
+                    width: 20%;
+                    font-size: 16px;
+                    margin: 0px 30px;
+                    &:first-child{
+                        width: 28%;
+                    }
+                }
+                button {
+                    margin-left: 35px;
+                    padding: 10px 38px 7px 20px;
+                    span {
+                        i {
+                            right: -25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
