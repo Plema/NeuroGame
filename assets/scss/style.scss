@@ -1,4 +1,3 @@
-@import "libs/button";
 @import "libs/header";
 @import "libs/footer";
 @import "libs/fonts";
@@ -8,6 +7,7 @@
 body {
     min-height: 100vh;
     position: relative;
+    background: #F2F7FD;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -22,9 +22,10 @@ html {
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     outline: none;
+    list-style: none;
     text-decoration: none;
+    font-family: 'Conv_Circe';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -43,7 +44,7 @@ html {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -92,54 +93,31 @@ input{
     appearance: none;   
 }
 
+.wrapper{
+    overflow: hidden;
+}
+
 a {
     cursor: pointer;
 }
 
 .container {
+    z-index: 4;
     width: 100%;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
     position: relative;
-
-}
-
-@media (min-width: 768px) {
-
-    .container {
-        width: 648px;
+    @media (min-width: 768px) {
         padding: 0;
+        width: 648px;
     }
-
-}
-
-@media (min-width: 1024px) {
-
-    .container {
+    @media (min-width: 1024px) {
         width: 864px;
     }
-
-}
-
-@media (min-width: 1280px) {
-
-    .container {
+    @media (min-width: 1280px) {
         width: 1080px;
     }
-
-}
-
-@media (min-width: 1400px) {
-
-    .container {
+    @media (min-width: 1400px) {
         width: 1240px;
     }
-
-}
-
-
-@media (min-width: 1600px) {
-
-    
-
 }
