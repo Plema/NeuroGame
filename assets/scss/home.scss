@@ -879,10 +879,30 @@
                     width: 73%;
                     margin-top: -22px;
                     margin-bottom: 10px;
+                    position: relative;
                     box-shadow: 0 5px 8px #CDD5E4;
                     img{
                         width: 100%;
                         display: block;
+                    }
+                    i{
+                        top: 5px;
+                        right: 5px;
+                        width: 28px;
+                        height: 28px;
+                        display: none;
+                        border-radius: 50%;
+                        position: absolute;
+                        background: #F14942;
+                        box-shadow: 0 4px 4px rgba(220, 28, 20, 0.33);
+                        &::before{
+                            top: 50%;
+                            left: 50%;
+                            font-size: 14px;
+                            color: #FFFFFF;
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                        }
                     }
                 }
                 .text{
@@ -928,6 +948,13 @@
                         span{
                             display: none;
                         }
+                    }
+                }
+            }
+            .sale{
+                .img{
+                    i{
+                        display: block;
                     }
                 }
             }
@@ -1176,6 +1203,13 @@
                     padding: 15px;
                     .img {
                         margin: -37px 0 0;
+                        i {
+                            width: 34px;
+                            height: 34px;
+                            &::before {
+                                font-size: 18px;
+                            }
+                        }
                     }
                 }
             }
@@ -1215,6 +1249,13 @@
                     .img {
                         width: 47%;
                         margin: -48px 0 0;
+                        i{
+                            width: 40px;
+                            height: 40px;
+                            &::before {
+                                font-size: 20px;
+                            }
+                        }
                     }
                     .text {
                         width: 47%;

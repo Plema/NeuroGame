@@ -9,6 +9,7 @@
 .icon-search:before { content: '\e807'; } /* '' */
 .icon-user:before { content: '\e808'; } /* '' */
 .icon-vk:before { content: '\e809'; } /* '' */
-.icon-youtube:before { content: '\e80a'; } /* '' */
+.icon-shares:before { content: '\e80a'; } /* '' */
 .icon-drop:before { content: '\e80b'; } /* '' */
+.icon-youtube:before { content: '\e80e'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
