@@ -42,7 +42,7 @@
 }
 
 .chapters {
-    z-index: 5;
+    z-index: 3;
     position: relative;
     padding: 14px 0 25px;
     .selected{
@@ -634,7 +634,7 @@
                         font-size: 14px;
                         color: #FFFFFF;
                         position: absolute;
-                        transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%) rotate(90deg);
                         transition: all 0.3s;
                     }
                 }
@@ -713,7 +713,7 @@
                                         box-shadow: 0 4px 4px #DC1C14;
                                         &::before{
                                             color: #F14942;
-                                            transform: translate(-50%, -50%) rotate(90deg);
+                                            transform: translate(-50%, -50%);
                                         }
                                     }
                                 }
@@ -1727,7 +1727,7 @@
                                         box-shadow: 0 4px 4px #DC1C14;
                                         &::before{
                                             color: #F14942;
-                                            transform: translate(-50%, -50%) rotate(90deg);
+                                            transform: translate(-50%, -50%);
                                         }
                                     }
                                 }

@@ -45,6 +45,8 @@
 }
 
 .checkout {
+    z-index: 3;
+    position: relative;
     padding: 21px 0 30px;
     .title{
         text-align: center;
