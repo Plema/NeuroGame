@@ -86,7 +86,7 @@
 }
 
 .chapters {
-    z-index: 1;
+    z-index: 5;
     margin-top: -63px;
     position: relative;
     padding-bottom: 25px;
@@ -116,7 +116,7 @@
             background: #FFFFFF;
             padding: 10px 35px 10px 18px;
             &::after{
-                content: '\E80B';
+                content: '\E813';
                 top: 50%;
                 right: 11px;
                 font-size: 8px;
@@ -142,7 +142,58 @@
         }
     }
     .chapters-items{
+        top: 0;
+        left: 50%;
+        z-index: 4;
+        width: 288px;
         display: none;
+        overflow: hidden;
+        position: absolute;
+        padding: 8px 20px;
+        border-radius: 10px;
+        background: #FFFFFF;
+        transform: translate(-50%, 0);
+        .chapters-item{
+            z-index: 1;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            align-items: center;
+            padding: 12px 35px 12px 1px;
+            border-bottom: 1px solid #DDE5F3;
+            &:first-child{
+                &::after{
+                    content: '\E813';
+                    top: 50%;
+                    right: 11px;
+                    font-size: 8px;
+                    color: #7C7D9C;
+                    position: absolute;
+                    font-family: 'fontello';
+                    transform: translate(0, -50%) rotate(180deg);
+                }
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            .img{
+                max-width: 25px;
+                margin-right: 34px;
+                img{
+                    display: block;
+                    max-width: 100%;
+                }
+            }
+            p{
+                font-size: 16px;
+                color: #335872;
+                line-height: 24px;
+                transform: translate(0, 2px);
+            }
+        }
+    }
+    .chapters-items.active{
+        display: block;
     }
     @media (min-width: 768px) {
         margin-top: -70px;
@@ -155,12 +206,21 @@
             display: none;
         }
         .chapters-items{
-            display: block;
+            width: auto;
             display: flex;
+            position: static;
+            background: transparent;
+            transform: translate(0, 0);
             justify-content: space-between;
             .chapters-item{
+                padding: 0;
                 width: 90px;
+                display: block;
                 position: relative;
+                border-bottom: none;
+                &::after{
+                    display: none;
+                }
                 &:hover{
                     p{
                         color: #F14942;
@@ -177,8 +237,10 @@
                 .img{
                     width: 90px;
                     height: 80px;
+                    margin-right: 0;
                     display: flex;
                     overflow: hidden;
+                    max-width: initial;
                     margin-bottom: 10px;
                     align-items: center;
                     border-radius: 25px;
@@ -186,7 +248,8 @@
                     justify-content: center;
                     img{
                         width: auto;
-                        max-width: 38px;
+                        display: block;
+                        max-width: initial;
                     }
                 }
                 p{
@@ -195,6 +258,7 @@
                     line-height: 16px;
                     text-align: center;
                     transition: all 0.5s;
+                    transform: translate(0, 0);
                 }
             }
             .chapters-item.active{

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NeuroGame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/contacts.min.css" data-inprogress="">
+</head>
+
+<body>
+
+   <!-- Основной контент -->
+  <section class="wrapper">
+
+    <!-- Header -->
+    <include src="assets/templates/header.html"></include>
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+                <li><span>Контакты</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="title">
+                <h2>Контакты</h2>
+                <span></span>
+            </div>
+            <div class="contacts-content">
+                <h3>Свяжитесь с нами</h3>
+                <form action="">
+                    <div class="form-item">
+                        <div class="input">
+                            <span>Ваше имя</span>
+                            <label><i class="icon-form-user"></i><input type="text"></label>
+                        </div>
+                        <div class="input">
+                            <span>E-mail</span>
+                            <label><i class="icon-form-mail"></i><input type="text"></label>
+                        </div>
+                        <div class="input">
+                            <span>Телефон</span>
+                            <label><i class="icon-form-tel"></i><input type="text"></label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="textarea">
+                            <span>Сообщение</span>
+                            <textarea></textarea>
+                        </div>
+                        <div class="button">
+                            <div class="captcha">
+                                <img src="img/captcha.png" alt="">
+                            </div>
+                            <button>Отправить</button>
+                        </div>
+                    </div>
+                </form>
+                <a class="mail" href="mailto:info@neurogame.pro"><i class="icon-form-mail"></i>info@neurogame.pro</a>
+            </div>
+        </div>
+    </section>
+
+  </section>
+
+  <!-- Footer -->
+  <include src="assets/templates/footer.html"></include>
+
+  <!-- Скрипты -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.matchHeight.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/contacts.min.js"></script>
+
+</body>
+
+</html>

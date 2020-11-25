@@ -17,7 +17,32 @@
   <section class="wrapper">
 
     <!-- Header -->
-    <header class="header">
+    <div class="mobile-menu">
+    <span class="close"></span>
+    <nav>
+        <span class="close-menu"></span>
+        <ul>
+            <li class="active"><a href="about-us.html">О нас</a></li>
+            <li>
+                <a href="javascript:void(0)">Программы</a>
+                <ul>
+                    <li><a href="programs.html">Внимание</a></li>
+                    <li><a href="programs.html">Память</a></li>
+                    <li><a href="programs.html">Мышление</a></li>
+                    <li><a href="programs.html">Речь</a></li>
+                    <li><a href="programs.html">Моторное развитие</a></li>
+                    <li><a href="programs.html">Восприятие</a></li>
+                    <li><a href="programs.html">Произвольная регуляция</a></li>
+                </ul>
+            </li>
+            <li><a href="shares.html">Акции</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+
+<header class="header">
     <div class="header-bg"></div>
     <div class="container">
         <div class="header-content">
@@ -31,24 +56,73 @@
                 <nav>
                     <ul>
                         <li class="active"><a href="about-us.html">О нас</a></li>
-                        <li><a href="javasceipr:void(0)">Программы</a></li>
+                        <li>
+                            <a href="javascript:void(0)">Программы</a>
+                            <div class="drow">
+                                <ul>
+                                    <li data-drow="drow1" class="active"><a href="javascript:void(0)">Внимание</a></li>
+                                    <li data-drow="drow2"><a href="javascript:void(0)">Память</a></li>
+                                    <li data-drow="drow3"><a href="javascript:void(0)">Мышление</a></li>
+                                    <li data-drow="drow4"><a href="javascript:void(0)">Речь</a></li>
+                                    <li data-drow="drow5"><a href="javascript:void(0)">Моторное развитие</a></li>
+                                    <li data-drow="drow6"><a href="javascript:void(0)">Восприятие</a></li>
+                                    <li data-drow="drow7"><a href="javascript:void(0)">Произвольная регуляция</a></li>
+                                </ul>
+                                <div class="text drow1 active">
+                                    <h4>Внимание</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow2">
+                                    <h4>Память</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow3">
+                                    <h4>Мышление</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow4">
+                                    <h4>Речь</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow5">
+                                    <h4>Моторное развитие</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow6">
+                                    <h4>Восприятие</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow7">
+                                    <h4>Произвольная регуляция</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="shares.html">Акции</a></li>
                         <li><a href="blog.html">Блог</a></li>
-                        <li><a href="javasceipr:void(0)">Контакты</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="user-basket">
                 <div>
                     <a class="favorites" href="javascript:void(0)"><i class="icon-heart-empty"></i></a>
-                    <a class="basket" href="javascript:void(0)"><i class="icon-basket"></i><span><i>5</i></span></a>
+                    <a class="basket" href="basket.html"><i class="icon-basket"></i><span><i>5</i></span></a>
                 </div>
-                <div class="personal-area">
-                    <!-- <ul>
-                        <li><a href="javascript:void(0)">Вход</a></li>
-                        <li><a href="javascript:void(0)">Регистрация</a></li>
+                <!-- Если нет класа active появляеться имя пользователя -->
+                <div class="personal-area active">
+                    <ul>
+                        <li><a class="entrance_js" href="javascript:void(0)">Вход</a></li>
+                        <li><a class="check_js" href="javascript:void(0)">Регистрация</a></li>
                     </ul>
-                    <a class="area" href="javascript:void(0)"></a> -->
+                    <a class="area" href="personal-area.html"></a>
                     <span>Иван Иванов</span>
                     <i class="icon-user"></i>
                 </div>
@@ -149,7 +223,7 @@
                             <li>Внимание</li>
                             <li>Зрительная память</li>
                           </ul>
-                          <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                          <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                         </div>
                     </div>
                     <div class="rograms-item">
@@ -168,7 +242,7 @@
                         <li>Внимание</li>
                         <li>Зрительная память</li>
                         </ul>
-                        <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                        <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                     </div>
                     </div>
                     <div class="rograms-item">
@@ -187,7 +261,7 @@
                         <li>Внимание</li>
                         <li>Зрительная память</li>
                         </ul>
-                        <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                        <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                     </div>
                     </div>
                     <div class="rograms-item">
@@ -206,7 +280,7 @@
                         <li>Внимание</li>
                         <li>Зрительная память</li>
                         </ul>
-                        <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                        <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                     </div>
                     </div>
                     <div class="rograms-item">
@@ -225,7 +299,7 @@
                         <li>Внимание</li>
                         <li>Зрительная память</li>
                         </ul>
-                        <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                        <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                     </div>
                     </div>
                     <div class="rograms-item">
@@ -244,7 +318,7 @@
                         <li>Внимание</li>
                         <li>Зрительная память</li>
                         </ul>
-                        <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                        <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                     </div>
                     </div>
                     <div class="rograms-item">
@@ -263,7 +337,7 @@
                         <li>Внимание</li>
                         <li>Зрительная память</li>
                         </ul>
-                        <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                        <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                     </div>
                     </div>
                     <div class="rograms-item">
@@ -282,7 +356,7 @@
                         <li>Внимание</li>
                         <li>Зрительная память</li>
                         </ul>
-                        <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                        <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                     </div>
                     </div>
                     <div class="rograms-item">
@@ -301,7 +375,7 @@
                         <li>Внимание</li>
                         <li>Зрительная память</li>
                         </ul>
-                        <a href="javascript:void(0)"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                        <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
                     </div>
                     </div>
                 </div>
@@ -335,7 +409,7 @@
             <nav>
                 <ul>
                     <li><a href="about-us.html">О нас</a></li>
-                    <li><a href="javascript:void(0)">Контакты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                     <li><a href="javascript:void(0)">Сотрудничество</a></li>
                     <li><a href="javascript:void(0)">Партнёры</a></li>
                 </ul>

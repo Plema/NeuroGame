@@ -10,6 +10,13 @@
 .icon-user:before { content: '\e808'; } /* '' */
 .icon-vk:before { content: '\e809'; } /* '' */
 .icon-shares:before { content: '\e80a'; } /* '' */
-.icon-drop:before { content: '\e80b'; } /* '' */
-.icon-youtube:before { content: '\e80e'; } /* '' */
+.icon-down-arrow:before { content: '\e80b'; } /* '' */
+.icon-form-mail:before { content: '\e80c'; } /* '' */
+.icon-form-tel:before { content: '\e80d'; } /* '' */
+.icon-form-user:before { content: '\e80e'; } /* '' */
+.icon-exit:before { content: '\e80f'; } /* '' */
+.icon-history:before { content: '\e810'; } /* '' */
+.icon-lock:before { content: '\e811'; } /* '' */
+.icon-youtube:before { content: '\e812'; } /* '' */
+.icon-drop:before { content: '\e813'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
