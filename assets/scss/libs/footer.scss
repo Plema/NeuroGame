@@ -133,15 +133,15 @@
             padding: 30px 0;
             display: flex;
             justify-content: space-between;
-            .program-nav{
-                display: block;
-                padding-right: 30px;
-                ul{
-                    li {
-                        margin-bottom: 4px;
-                    }
-                }
-            }
+            // .program-nav{
+            //     display: block;
+            //     padding-right: 30px;
+            //     ul{
+            //         li {
+            //             margin-bottom: 4px;
+            //         }
+            //     }
+            // }
             .data-nav{
                 margin-bottom: 0;
                 padding-right: 30px;
@@ -178,6 +178,15 @@
     }
     @media (min-width: 1024px) {
         .footer-nav {
+            .program-nav{
+                display: block;
+                padding-right: 30px;
+                ul{
+                    li {
+                        margin-bottom: 4px;
+                    }
+                }
+            }
             nav{
                 display: block;
                 padding-right: 30px;

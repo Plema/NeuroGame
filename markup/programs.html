@@ -56,11 +56,13 @@
     <span class="close"></span>
     <div class="entrance-content">
         <span class="close-popup"></span>
+        <h4>Вход</h4>
         <h5>Войти через профиль в соцсетях</h5>
         <ul class="social">
             <li><a href="javascript:void(0)"><i class="icon-facebook2"></i></a></li>
             <li><a href="javascript:void(0)"><i class="icon-vk2"></i></a></li>
             <li><a href="javascript:void(0)"><i class="icon-google"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="icon-odnoklassniki"></i></a></li>
         </ul>
         <form>
             <div class="inputs">
@@ -140,13 +142,13 @@
                             <a href="javascript:void(0)">Программы</a>
                             <div class="drow">
                                 <ul>
-                                    <li data-drow="drow1" class="active"><a href="javascript:void(0)">Внимание</a></li>
-                                    <li data-drow="drow2"><a href="javascript:void(0)">Память</a></li>
-                                    <li data-drow="drow3"><a href="javascript:void(0)">Мышление</a></li>
-                                    <li data-drow="drow4"><a href="javascript:void(0)">Речь</a></li>
-                                    <li data-drow="drow5"><a href="javascript:void(0)">Моторное развитие</a></li>
-                                    <li data-drow="drow6"><a href="javascript:void(0)">Восприятие</a></li>
-                                    <li data-drow="drow7"><a href="javascript:void(0)">Произвольная регуляция</a></li>
+                                    <li data-drow="drow1" class="active"><a href="programs.html">Внимание</a></li>
+                                    <li data-drow="drow2"><a href="programs.html">Память</a></li>
+                                    <li data-drow="drow3"><a href="programs.html">Мышление</a></li>
+                                    <li data-drow="drow4"><a href="programs.html">Речь</a></li>
+                                    <li data-drow="drow5"><a href="programs.html">Моторное развитие</a></li>
+                                    <li data-drow="drow6"><a href="programs.html">Восприятие</a></li>
+                                    <li data-drow="drow7"><a href="programs.html">Произвольная регуляция</a></li>
                                 </ul>
                                 <div class="text drow1 active">
                                     <h4>Внимание</h4>
@@ -196,14 +198,12 @@
                     <a class="favorites" href="javascript:void(0)"><i class="icon-heart-empty"></i></a>
                     <a class="basket" href="basket.html"><i class="icon-basket"></i><span><i>5</i></span></a>
                 </div>
-                <!-- Если нет класа active появляеться имя пользователя -->
+                <!-- Если есть класа active  при клике появиться попап если нет то переходит в кабинет -->
                 <div class="personal-area active">
-                    <ul>
-                        <li><a class="entrance_js" href="javascript:void(0)">Вход</a></li>
-                        <li><a class="check_js" href="javascript:void(0)">Регистрация</a></li>
-                    </ul>
+                    <a class="entrance_js" href="javascript:void(0)"></a>
                     <a class="area" href="personal-area.html"></a>
-                    <span>Иван Иванов</span>
+                    <span class="entrance-text">Вход</span>
+                    <span class="area-text">Иван Иванов</span>
                     <i class="icon-user"></i>
                 </div>
             </div>
@@ -250,7 +250,7 @@
             <div class="chapters-item">
               <a href="programs.html"></a>
               <div class="img"><img src="img/chapters-img5.png" alt=""></div>
-              <p>Движение и действие</p>
+              <p>Моторное развитие</p>
             </div>
             <div class="chapters-item">
               <a href="programs.html"></a>
@@ -284,32 +284,88 @@
             </div>
             <div class="programs-content">
                 <div class="filter">
-                    <div class="filter-items">
-                        <div class="filter-item">
-                            <div class="item">
-                                <p>Категория</p>
+                    <form>
+                        <div class="filter-items">
+                            <div class="filter-item">
+                                <div class="item">
+                                    <p>Категория</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="w" type="checkbox" checked="">
+                                            <label for="w"><i></i>Категория 1</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="q" type="checkbox">
+                                            <label for="q"><i></i>Категория 2</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="e" type="checkbox">
+                                            <label for="e"><i></i>Категория 3</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="r" type="checkbox">
+                                            <label for="r"><i></i>Категория 4</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="t" type="checkbox">
+                                            <label for="t"><i></i>Категория 5</label>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul>
-                                <li class="active"><a href="javascript:void(0)">Категория 1</a></li>
-                                <li><a href="javascript:void(0)">Категория 2</a></li>
-                                <li><a href="javascript:void(0)">Категория 3</a></li>
-                                <li><a href="javascript:void(0)">Категория 4</a></li>
-                                <li><a href="javascript:void(0)">Категория Категория 5</a></li>
-                            </ul>
-                        </div>
-                        <div class="filter-item">
-                            <div class="item">
-                                <p>Возраст</p>
+                            <div class="filter-item">
+                                <div class="item">
+                                    <p>Возраст</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="a" type="checkbox" checked="">
+                                            <label for="a"><i></i>Возраст 1</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="s" type="checkbox">
+                                            <label for="s"><i></i>Возраст 2</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="d" type="checkbox">
+                                            <label for="d"><i></i>Возраст 3</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="f" type="checkbox">
+                                            <label for="f"><i></i>Возраст 4</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input id="g" type="checkbox">
+                                            <label for="g"><i></i>Возраст 5</label>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul>
-                                <li class="active"><a href="javascript:void(0)">Возраст 1</a></li>
-                                <li><a href="javascript:void(0)">Возраст 2</a></li>
-                                <li><a href="javascript:void(0)">Возраст 3</a></li>
-                                <li><a href="javascript:void(0)">Возраст 4</a></li>
-                                <li><a href="javascript:void(0)">Возраст Возраст 5</a></li>
-                            </ul>
                         </div>
-                    </div>
+                        <div class="link">
+                            <a class="clean" href="javascript:void(0)">Отчистить</a>
+                            <button>Применить</button>
+                        </div>
+                    </form>
                     <div class="sort">
                         <div class="item">
                             <p>Сортировать</p>
@@ -511,7 +567,7 @@
         <form>
             <input type="text" placeholder="Ваше имя">
             <input type="text" placeholder="E-mail">
-            <button><span>Подписаться<i class="icon-left-arrow"></i></span></button>
+            <button><span>Продолжить<i class="icon-left-arrow"></i></span></button>
         </form>
       </div>
     </div>

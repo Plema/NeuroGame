@@ -66,6 +66,15 @@ input[type="submit"] {
     appearance: none;
 }
 
+input {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
 input:not([type=checkbox]):not([type=radio]),
 textarea, 
 select {
@@ -89,6 +98,14 @@ button {
     }
 }
 
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+}
+
 input{
     -webkit-appearance: none;   
     appearance: none;   
@@ -110,7 +127,7 @@ a {
     position: relative;
     @media (min-width: 768px) {
         padding: 0;
-        width: 648px;
+        width: 90%;
     }
     @media (min-width: 1024px) {
         width: 864px;
@@ -127,7 +144,6 @@ a {
     display: none;
     padding: 14px 0;
     ul{
-        margin: 0 -4px;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;

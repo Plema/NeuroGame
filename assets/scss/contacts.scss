@@ -189,6 +189,10 @@
                 }
             }
         }
+        .list-map{
+            display: flex;
+            flex-direction: column;
+        }
         .mail{
             font-size: 16px;
             color: #5F6470;
@@ -196,10 +200,58 @@
             position: relative;
             padding-left: 37px;
             font-weight: normal;
+            margin-bottom: 15px;
             display: inline-block;
+            transition: all .3s;
+            &:hover{
+                color: #5384fd;
+            }
             i{
                 top: 45%;
                 left: 1px;
+                font-size: 22px;
+                color: #7993B3;
+                position: absolute;
+                transform: translate(0, -50%);
+            }
+        }
+        .tel{
+            font-size: 16px;
+            color: #5F6470;
+            line-height: 20px;
+            position: relative;
+            padding-left: 37px;
+            font-weight: normal;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: all .3s;
+            &:hover{
+                color: #5384fd;
+            }
+            i{
+                top: 45%;
+                left: 1px;
+                font-size: 22px;
+                color: #7993B3;
+                position: absolute;
+                transform: translate(0, -50%);
+            }
+        }
+        .location{
+            font-size: 16px;
+            color: #5F6470;
+            line-height: 20px;
+            position: relative;
+            padding-left: 37px;
+            font-weight: normal;
+            display: inline-block;
+            transition: all .3s;
+            &:hover{
+                color: #5384fd;
+            }
+            i{
+                top: 25%;
+                left: 3px;
                 font-size: 22px;
                 color: #7993B3;
                 position: absolute;
@@ -275,6 +327,18 @@
                         }
                     }
                 }
+            }
+            .list-map{
+                display: flex;
+                flex-direction: row;
+            }
+            .mail{
+                margin-bottom: 0;
+                margin-right: 30px;
+            }
+            .tel{
+                margin-bottom: 0;
+                margin-right: 30px;
             }
         }
     }

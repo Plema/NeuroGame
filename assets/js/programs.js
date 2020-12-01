@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
     $('.filter li a').on('click', function(){
-        var filterItem = $(this).text();
-        $(this).parents('ul').siblings('.item').find('p').text(filterItem);
+        // var filterItem = $(this).text();
+        // $(this).parents('ul').siblings('.item').find('p').text(filterItem);
     });
 
     $('.favorites-link').on('click', function(){
@@ -18,6 +18,7 @@ $(document).ready(function(){
         nextArrow: '<button class="slick-arrow next"><i class="icon-right-arrow"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-right-arrow"></i></button>',
     });
+    
     $('.product-for').slick({
         fade: true,
         arrows: false,

@@ -56,11 +56,13 @@
     <span class="close"></span>
     <div class="entrance-content">
         <span class="close-popup"></span>
+        <h4>Вход</h4>
         <h5>Войти через профиль в соцсетях</h5>
         <ul class="social">
             <li><a href="javascript:void(0)"><i class="icon-facebook2"></i></a></li>
             <li><a href="javascript:void(0)"><i class="icon-vk2"></i></a></li>
             <li><a href="javascript:void(0)"><i class="icon-google"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="icon-odnoklassniki"></i></a></li>
         </ul>
         <form>
             <div class="inputs">
@@ -140,13 +142,13 @@
                             <a href="javascript:void(0)">Программы</a>
                             <div class="drow">
                                 <ul>
-                                    <li data-drow="drow1" class="active"><a href="javascript:void(0)">Внимание</a></li>
-                                    <li data-drow="drow2"><a href="javascript:void(0)">Память</a></li>
-                                    <li data-drow="drow3"><a href="javascript:void(0)">Мышление</a></li>
-                                    <li data-drow="drow4"><a href="javascript:void(0)">Речь</a></li>
-                                    <li data-drow="drow5"><a href="javascript:void(0)">Моторное развитие</a></li>
-                                    <li data-drow="drow6"><a href="javascript:void(0)">Восприятие</a></li>
-                                    <li data-drow="drow7"><a href="javascript:void(0)">Произвольная регуляция</a></li>
+                                    <li data-drow="drow1" class="active"><a href="programs.html">Внимание</a></li>
+                                    <li data-drow="drow2"><a href="programs.html">Память</a></li>
+                                    <li data-drow="drow3"><a href="programs.html">Мышление</a></li>
+                                    <li data-drow="drow4"><a href="programs.html">Речь</a></li>
+                                    <li data-drow="drow5"><a href="programs.html">Моторное развитие</a></li>
+                                    <li data-drow="drow6"><a href="programs.html">Восприятие</a></li>
+                                    <li data-drow="drow7"><a href="programs.html">Произвольная регуляция</a></li>
                                 </ul>
                                 <div class="text drow1 active">
                                     <h4>Внимание</h4>
@@ -196,14 +198,12 @@
                     <a class="favorites" href="javascript:void(0)"><i class="icon-heart-empty"></i></a>
                     <a class="basket" href="basket.html"><i class="icon-basket"></i><span><i>5</i></span></a>
                 </div>
-                <!-- Если нет класа active появляеться имя пользователя -->
+                <!-- Если есть класа active  при клике появиться попап если нет то переходит в кабинет -->
                 <div class="personal-area active">
-                    <ul>
-                        <li><a class="entrance_js" href="javascript:void(0)">Вход</a></li>
-                        <li><a class="check_js" href="javascript:void(0)">Регистрация</a></li>
-                    </ul>
+                    <a class="entrance_js" href="javascript:void(0)"></a>
                     <a class="area" href="personal-area.html"></a>
-                    <span>Иван Иванов</span>
+                    <span class="entrance-text">Вход</span>
+                    <span class="area-text">Иван Иванов</span>
                     <i class="icon-user"></i>
                 </div>
             </div>
@@ -250,7 +250,7 @@
             <div class="chapters-item">
               <a href="programs.html"></a>
               <div class="img"><img src="img/chapters-img5.png" alt=""></div>
-              <p>Движение и действие</p>
+              <p>Моторное развитие</p>
             </div>
             <div class="chapters-item">
               <a href="programs.html"></a>
@@ -271,7 +271,7 @@
         <div class="container">
             <ul>
               <li><a href="index.html">Главная</a></li>
-              <li><a href="programs.html">Программы</a></li>
+              <li><a href="programs.html">Мышление</a></li>
                 <li><span>Исключение предметов</span></li>
             </ul>
         </div>
@@ -322,6 +322,11 @@
                             <a class="heart" href="javascript:void(0)"><span>Отложить<i class="icon-heart-empty"></i></span></a>
                             <a class="down" href="javascript:void(0)"><span>Купить и скачать за <strong>159 руб.</strong><i class="icon-down-arrow"></i></span></a>
                         </div>
+                        <ul class="method">
+                          <li><img src="img/visa.png" alt=""></li>
+                          <li><img src="img/MasterCard.png" alt=""></li>
+                          <li><img src="img/PayPal.png" alt=""></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="description">
@@ -519,7 +524,7 @@
         <form>
             <input type="text" placeholder="Ваше имя">
             <input type="text" placeholder="E-mail">
-            <button><span>Подписаться<i class="icon-left-arrow"></i></span></button>
+            <button><span>Продолжить<i class="icon-left-arrow"></i></span></button>
         </form>
       </div>
     </div>
