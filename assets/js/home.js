@@ -27,6 +27,14 @@ $(document).ready(function(){
 
     }
 
+    if($(window).width() < 768){
+
+        $(".programs-nav").mCustomScrollbar({
+            axis:"x" 
+        });
+
+    }
+
     $('.programs-nav li').on('click', function(){
         var dataProgram = $(this).data('programs');
         $('.programs-nav li').removeClass('active');
@@ -36,10 +44,6 @@ $(document).ready(function(){
         $('.programs-slider').each(function(){
             $(this).get(0).slick.setPosition();    
         });
-    });
-
-    $(".programs-nav").mCustomScrollbar({
-        axis:"x" 
     });
 
     $('.programs-slider').each(function() {

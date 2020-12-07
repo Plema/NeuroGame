@@ -151,6 +151,7 @@
         display: block;
     }
     @media (min-width: 400px) {
+        padding: 5px 0 25px;
         .selected {
             width: 330px;
         }
@@ -162,6 +163,7 @@
         padding: 30px 0 30px;
     }
     @media (min-width: 1024px) {
+        z-index: 3;
         padding: 50px 0 40px;
         .selected{
             display: none;
@@ -320,24 +322,43 @@
                 .link{
                     display: flex;
                     margin-bottom: 10px;
+                    align-items: center;
                     justify-content: center;
                 }
-                a{
-                    width: 130px;
+                .clean{
                     font-size: 16px;
-                    color: #F14942;
+                    color: #5f6470;
                     margin-right: 5px;
                     line-height: 19px;
                     text-align: center;
+                    padding-left: 20px;
+                    position: relative;
                     border-radius: 30px;
                     display: inline-block;
-                    padding: 11px 12px 9px;
                     background: transparent;
-                    border: 2px solid #F14942;
                     transition: all 0.3s;
-                    &:hover{
-                        color: #ffffff;
+                    &::after{
+                        content: '';
+                        top: 40%;
+                        left: 0;
+                        width: 16px;
+                        height: 2px;
+                        position: absolute;
                         background: #F14942;
+                        transform: translate(0, -50%) rotate(45deg);
+                    }
+                    &::before{
+                        content: '';
+                        top: 40%;
+                        left: 0;
+                        width: 16px;
+                        height: 2px;
+                        position: absolute;
+                        background: #F14942;
+                        transform: translate(0, -50%) rotate(-45deg);
+                    }
+                    &:hover{
+                        color: #F14942;
                     }
                 }
                 button{
@@ -759,8 +780,8 @@
                         margin-bottom: 0;
                         justify-content: flex-start;
                     }
-                    a {
-                        margin-right: 50px;
+                    .clean {
+                        margin-right: 15px;
                     }
                     button {
                         margin-left: 0;

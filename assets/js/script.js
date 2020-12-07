@@ -12,6 +12,7 @@ $(document).ready(function(){
     $('.entrance_js').on('click', function(){
         $('.check').fadeOut();
         $('.entrance').fadeIn();
+        $('.mobile-menu').fadeOut();
     });
 
     $('.forgot_js').on('click', function(){

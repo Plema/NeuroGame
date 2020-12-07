@@ -153,8 +153,6 @@
             }
             .social-shares {
                 .shares{
-                    display: block;
-                    margin-bottom: 20px;
                     li {
                         margin-bottom: 4px;
                     }
@@ -199,6 +197,7 @@
             .social-shares {
                 padding-right: 25px;
                 .shares {
+                    display: block;
                     margin-bottom: 32px;
                 }
             }

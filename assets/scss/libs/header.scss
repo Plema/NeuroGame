@@ -26,7 +26,6 @@
         border-radius: 7px;
         background: #FFFFFF;
         padding: 42px 20px 34px;
-        box-shadow: 0 8px 20px #E3E9F9;
         transform: translate(-50%, -50%);
         .close-popup{
             top: 12px;
@@ -317,7 +316,6 @@
         border-radius: 7px;
         background: #FFFFFF;
         padding: 43px 20px 30px;
-        box-shadow: 0 8px 20px #E3E9F9;
         transform: translate(-50%, -50%);
         .close-popup{
             top: 12px;
@@ -597,7 +595,6 @@
         border-radius: 7px;
         background: #FFFFFF;
         padding: 43px 20px 30px;
-        box-shadow: 0 8px 20px #E3E9F9;
         transform: translate(-50%, -50%);
         .close-popup{
             top: 12px;
@@ -851,11 +848,89 @@
         cursor: pointer;
         position: absolute;
     }
+    .personal-area{
+        width: 50%;
+        z-index: 2;
+        opacity: 0.7;
+        cursor: pointer;
+        display: flex;
+        margin-right: 1px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        align-items: center;
+        position: relative;
+        transition: all 0.5s;
+        &:hover{
+            opacity: 1;
+        }
+        .entrance_js{
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: absolute;
+        }
+        .area{
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+        }
+        .entrance-text{
+            display: none;
+        }
+        .area-text{
+            display: block;
+        }
+        span{
+            color: #335872;
+            font-size: 14px;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        i{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            position: relative;
+            display: inline-block;
+            border: 1px solid #335872;
+            transition: all 0.3s;
+            &::before{
+                top: 50%;
+                left: 50%;
+                font-size: 14px;
+                color: #335872;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                transition: all 0.3s;
+            }
+        }
+    }
+    .personal-area.active{
+        .entrance_js{
+            display: block;
+        }
+        .area{
+            display: none;
+        }
+        .entrance-text{
+            display: block;
+        }
+        .area-text{
+            display: none;
+        }
+    }
     nav{
         z-index: 2;
         width: auto;
         width: 293px;
-        padding: 21px 0 10px;
+        padding: 15px 0 10px;
         position: relative;
         display: inline-block;
         background: #F2F7FD;
@@ -972,6 +1047,7 @@
     .header-bg{
         top: 0;
         left: 0;
+        z-index: -1;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -1245,6 +1321,7 @@
             button{
                 top: 50%;
                 right: 15px;
+                height: 22px;
                 border: none;
                 cursor: pointer;
                 position: absolute;
@@ -1482,10 +1559,10 @@
                                     h4{
                                         font-size: 18px;
                                         color: #F14942;
+                                        font-weight: 400;
                                         line-height: 18px;
-                                        font-weight: bold;
-                                        font-family: 'Conv_CirceBold';
                                         margin-bottom: 15px;
+                                        font-family: 'Conv_Circe';
                                     }
                                     p{
                                         font-size: 16px;

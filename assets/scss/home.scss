@@ -213,6 +213,7 @@
         padding-bottom: 40px;
     }
     @media (min-width: 1024px) {
+        z-index: 3;
         margin-top: -80px;
         padding-bottom: 50px;
         .selected{
@@ -472,7 +473,7 @@
         } 
     }
     @media (min-width: 1024px) {
-        padding: 35px 0 40px;
+        padding: 15px 0 40px;
         .title {
             margin-bottom: 55px;
             h2 {
@@ -506,7 +507,7 @@
         } 
     }
     @media (min-width: 1280px) {
-        padding: 45px 0 60px;
+        padding: 30px 0 60px;
         .title {
             margin-bottom: 65px;
             h2 {
@@ -516,7 +517,7 @@
         }
     }
     @media (min-width: 1400px) {
-        padding: 53px 0 80px;
+        padding: 20px 0 50px;
         .title {
             margin-bottom: 100px;
             h2 {
@@ -742,8 +743,9 @@
         }
     }
     @media (min-width: 1024px) {
-        padding: 35px 0 60px;
+        padding: 25px 0 60px;
         &::after{
+            top: -125px;
             display: block;
         }
         .title {
@@ -773,7 +775,10 @@
         }
     }
     @media (min-width: 1280px) {
-        padding: 45px 0 80px;
+        padding: 30px 0 80px;
+        &::after{
+            top: -100px;
+        }
         .title {
             margin-bottom: 65px;
             h2 {
@@ -783,7 +788,10 @@
         }
     }
     @media (min-width: 1400px) {
-        padding: 69px 0 90px;
+        padding: 50px 0 90px;
+        &::after{
+            top: -70px;
+        }
         .title {
             margin-bottom: 100px;
             h2 {
@@ -1267,7 +1275,7 @@
         }
     }
     @media (min-width: 1024px) {
-        padding: 25px 0 100px;
+        padding: 25px 0 65px;
         .title {
             text-align: left;
             margin-bottom: 30px;
@@ -1300,7 +1308,7 @@
         }
     }
     @media (min-width: 1280px) {
-        padding: 30px 0 120px;
+        padding: 30px 0 90px;
         .title {
             margin-bottom: 40px;
             h2 {
@@ -1327,7 +1335,7 @@
         }
     }
     @media (min-width: 1400px) {
-        padding: 40px 0 150px;
+        padding: 40px 0 100px;
         .title {
             margin-bottom: 50px;
             h2 {
