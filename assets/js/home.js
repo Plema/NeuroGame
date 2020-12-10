@@ -91,7 +91,7 @@ $(window).resize(function(){
 
     if($(window).width() > 660){
 
-        $('.why-we-slider').slick('unslick');
+        // $('.why-we-slider').slick('unslick');
 
     }
 
