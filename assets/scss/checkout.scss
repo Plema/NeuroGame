@@ -5,7 +5,15 @@
         background: url('../img/header-mobile-page-bg.png') 0 100% no-repeat;
         background-size: cover;
     }
+    @media (min-width: 520px){
+        .form {
+            padding: 35px 0 40px;
+        }
+    }
     @media (min-width: 768px){
+        .form{
+            padding: 16px 0;
+        }
         margin-bottom: 90px;
         .header-bg{
             background: url('../img/header-page-bg.png') 0 100% no-repeat;

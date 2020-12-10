@@ -1,0 +1,175 @@
+.header {
+    margin-bottom: 64px;
+    .header-bg {
+        height: 153%;
+        background: url('../img/header-mobile-page-bg.png') 0 100% no-repeat;
+        background-size: cover;
+    }
+    @media (min-width: 520px){
+        .form {
+            padding: 35px 0 40px;
+        }
+    }
+    @media (min-width: 768px){
+        .form{
+            padding: 16px 0;
+        }
+        margin-bottom: 90px;
+        .header-bg{
+            background: url('../img/header-page-bg.png') 0 100% no-repeat;
+            background-size: cover;
+        }
+        .header-content {
+            padding: 22px 0 15px;
+        }
+    }
+    @media (min-width: 1024px) {
+        margin-bottom: 140px;
+        .header-bg {
+            height: 190%;
+        }
+        .header-content{
+            padding: 22px 0 10px;
+        } 
+    }
+    @media (min-width: 1280px) {
+        margin-bottom: 160px;
+        .header-bg {
+            height: 200%;
+        }
+        .header-content {
+            padding: 22px 0 10px;
+        }
+    }
+    @media (min-width: 1400px) {
+        margin-bottom: 182px;
+        .header-bg {
+            height: 205%;
+        }
+        .header-content {
+            padding: 30px 0 10px;
+        }
+    }
+}
+
+.page-text {
+    padding: 21px 0 30px;
+    .title{
+        text-align: center;
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 12px;
+        h2{
+            font-size: 24px;
+            font-weight: 400;
+            color: #414550;
+            line-height: 29px;
+        }
+        span{
+            left: 50%;
+            bottom: 0;
+            width: 53px;
+            height: 5px;
+            position: absolute;
+            transform: translate(-50%, 0);
+            &::before{
+                content: '';
+                top: 0;
+                left: 0;
+                width: 11px;
+                height: 100%;
+                position: absolute;
+                border-radius: 20px;
+                background: #F14942;
+            }
+            &::after{
+                content: '';
+                top: 0;
+                right: 0;
+                width: 36px;
+                height: 100%;
+                position: absolute;
+                border-radius: 20px;
+                background: #F14942;
+            }
+        }
+    }
+    .text-content{
+        border-radius: 20px;
+        background: #FFFFFF;
+        padding: 26px 16px 29px;
+        box-shadow: 0px 4px 20px #E6EDF9;
+        p{
+            color: #414550;
+            font-size: 16px;
+            line-height: 17px;
+            font-weight: normal;
+            padding-bottom: 15px;
+            &:last-child{
+                padding-bottom: 0;
+            }
+            a{
+                color: #5384FD;
+                display: inline-block;
+                text-decoration: underline;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 25px 0 40px;
+        .title {
+            padding-bottom: 13px;
+            h2 {
+                font-size: 26px;
+                line-height: 30px;
+            }
+        }
+        .text-content {
+            padding: 40px 35px;
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 28px 0 105px;
+        .title {
+            margin-bottom: 42px;
+            h2 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        .text-content {
+            
+        }
+    }
+    @media (min-width: 1280px) {
+        padding: 32px 0 145px;
+        .title {
+            margin-bottom: 45px;
+            h2 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
+        .text-content {
+            
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 39px 0 190px;
+        .title {
+            margin-bottom: 51px;
+            h2 {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+        .text-content {
+            padding: 51px 45px 46px;
+            p{
+                font-size: 18px;
+                line-height: 19px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

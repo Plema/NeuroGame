@@ -9,6 +9,12 @@ $(document).ready(function(){
         $('.entrance').fadeOut();
     });
 
+    $('.support_js').on('click', function(){
+        $('.support').fadeIn();
+        $('.check').fadeOut();
+        $('.entrance').fadeOut();
+    });
+
     $('.entrance_js').on('click', function(){
         $('.check').fadeOut();
         $('.entrance').fadeIn();
@@ -29,12 +35,14 @@ $(document).ready(function(){
         $('.check').fadeOut();
         $('.entrance').fadeOut();
         $('.forgot-popup').fadeOut();
+        $('.support').fadeOut();
     });
 
     $('.close-popup').on('click', function(){
         $('.check').fadeOut();
         $('.entrance').fadeOut();
         $('.forgot-popup').fadeOut();
+        $('.support').fadeOut();
     });
 
     $('.mobile-menu ul li ul').parent().addClass('drop');
@@ -60,6 +68,10 @@ $(document).ready(function(){
     $('.chapters-items .chapters-item').on('click', function(){
         $('.selected .chapters-item').html($(this).html());
         $('.chapters-items').removeClass('active');
+    });
+
+    $('.mobile-menu .drop').on('click', function(){
+        $(this).toggleClass('open');
     });
 
 });

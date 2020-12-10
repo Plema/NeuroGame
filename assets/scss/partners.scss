@@ -1,0 +1,187 @@
+.header {
+    margin-bottom: 64px;
+    .header-bg {
+        height: 153%;
+        background: url('../img/header-mobile-page-bg.png') 0 100% no-repeat;
+        background-size: cover;
+    }
+    @media (min-width: 520px){
+        .form {
+            padding: 35px 0 40px;
+        }
+    }
+    @media (min-width: 768px){
+        .form{
+            padding: 16px 0;
+        }
+        margin-bottom: 90px;
+        .header-bg{
+            background: url('../img/header-page-bg.png') 0 100% no-repeat;
+            background-size: cover;
+        }
+        .header-content {
+            padding: 22px 0 15px;
+        }
+    }
+    @media (min-width: 1024px) {
+        margin-bottom: 140px;
+        .header-bg {
+            height: 190%;
+        }
+        .header-content{
+            padding: 22px 0 10px;
+        } 
+    }
+    @media (min-width: 1280px) {
+        margin-bottom: 160px;
+        .header-bg {
+            height: 200%;
+        }
+        .header-content {
+            padding: 22px 0 10px;
+        }
+    }
+    @media (min-width: 1400px) {
+        margin-bottom: 182px;
+        .header-bg {
+            height: 205%;
+        }
+        .header-content {
+            padding: 30px 0 10px;
+        }
+    }
+}
+
+.partners {
+    padding: 21px 0 30px;
+    .title{
+        text-align: center;
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 12px;
+        h2{
+            font-size: 24px;
+            font-weight: 400;
+            color: #414550;
+            line-height: 29px;
+        }
+        span{
+            left: 50%;
+            bottom: 0;
+            width: 53px;
+            height: 5px;
+            position: absolute;
+            transform: translate(-50%, 0);
+            &::before{
+                content: '';
+                top: 0;
+                left: 0;
+                width: 11px;
+                height: 100%;
+                position: absolute;
+                border-radius: 20px;
+                background: #F14942;
+            }
+            &::after{
+                content: '';
+                top: 0;
+                right: 0;
+                width: 36px;
+                height: 100%;
+                position: absolute;
+                border-radius: 20px;
+                background: #F14942;
+            }
+        }
+    }
+    .partners-content{
+        flex-wrap: wrap;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+        background: #FFFFFF;
+        padding: 26px 16px 29px;
+        box-shadow: 0px 4px 20px #E6EDF9;
+        .partners-item{
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            a{
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            img{
+                width: auto;
+                max-width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 25px 0 40px;
+        .title {
+            padding-bottom: 13px;
+            h2 {
+                font-size: 26px;
+                line-height: 30px;
+            }
+        }
+        .partners-content {
+            padding: 40px 35px;
+            .partners-item {
+                width: 33.33%;
+                padding: 10px;
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 28px 0 105px;
+        .title {
+            margin-bottom: 42px;
+            h2 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        .partners-content {
+            .partners-item {
+                width: 25%;
+                padding: 10px;
+            }
+        }
+    }
+    @media (min-width: 1280px) {
+        padding: 32px 0 145px;
+        .title {
+            margin-bottom: 45px;
+            h2 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
+        .partners-content {
+            
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 39px 0 190px;
+        .title {
+            margin-bottom: 51px;
+            h2 {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+        .partners-content {
+            padding: 51px 45px 46px;
+            .partners-item {
+                width: 16.66%;
+                padding: 10px;
+            }
+        }
+    }
+}
