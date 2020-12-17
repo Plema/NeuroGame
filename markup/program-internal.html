@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NeuroGame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/programs.min.css" data-inprogress="">
+</head>
+
+<body>
+
+   <!-- Основной контент -->
+  <section class="wrapper">
+
+    <!-- Header -->
+    <div class="popup support">
+    <span class="close"></span>
+    <div class="check-content">
+        <span class="close-popup"></span>
+        <h4>Отправить зарос</h4>
+        <form>
+            <div class="inputs">
+                <div class="input">
+                    <label>E-mail <i>*</i></label>
+                    <input type="text">
+                </div>
+                <div class="input">
+                    <label>Тема <i>*</i></label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="textarea">
+                <label>Описание <i>*</i></label>
+                <textarea></textarea>
+            </div>
+            <div class="text">
+                <img src="img/captcha.png" alt="">
+                <p>Введите данные своего запроса. Сотрудник нашей службы поддержки ответит вам в ближайшее время.</p>
+            </div>
+            <button><span>Отправить <i class="icon-left-arrow"></i></span></button>
+        </form>
+    </div>
+</div>
+
+<div class="popup check">
+    <span class="close"></span>
+    <div class="check-content">
+        <span class="close-popup"></span>
+        <h4>Регистрация</h4>
+        <form>
+            <div class="inputs">
+                <div class="input">
+                    <label>Имя</label>
+                    <input type="text">
+                    <label>E-mail</label>
+                    <input type="text">
+                </div>
+                <div class="input">
+                    <label>Номер телефона</label>
+                    <input type="text">
+                    <label>Пароль</label>
+                    <input type="text">
+                </div>
+            </div>
+            <button><span>Зарегистрироваться <i class="icon-left-arrow"></i></span></button>
+            <div class="text">
+                <p class="entrance_js">У вас есть аккаунт? <a href="javascript:void(0)">Войти</a></p>
+                <div>
+                    <div class="checkbox">
+                        <input id="w" type="checkbox" checked="">
+                        <label for="w"><i></i> Быть в курсе новинок и акций </label>
+                    </div>
+                    <span>Нажимая на кнопку, вы соглашаетесь на <a href="javascript:void(0)"> обработку персональных данных</a></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="popup entrance">
+    <span class="close"></span>
+    <div class="entrance-content">
+        <span class="close-popup"></span>
+        <h4>Вход</h4>
+        <h5>Войти через профиль в соцсетях</h5>
+        <ul class="social">
+            <li><a href="javascript:void(0)"><i class="icon-facebook2"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="icon-vk2"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="icon-google"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="icon-odnoklassniki"></i></a></li>
+        </ul>
+        <form>
+            <div class="inputs">
+                <div class="input">
+                    <label>Логин</label>
+                    <input type="text" placeholder="введите E-mail">
+                    <label>Пароль</label>
+                    <input type="text">
+                </div>
+                <a class="forgot forgot_js" href="javascript:void(0)">Забыли пароль?</a>
+            </div>
+            <button><span>Войти <i class="icon-left-arrow"></i></span></button>
+            <div class="text">
+                <p>У вас нет аккаунта? <a class="check_js" href="javascript:void(0)">Зарегистрироваться</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="popup forgot-popup">
+    <span class="close"></span>
+    <div class="forgot-content">
+        <span class="close-popup"></span>
+        <h5>Восстановить пароль</h5>
+        <form>
+            <div class="inputs">
+                <div class="input">
+                    <label>E-mail</label>
+                    <input type="text">
+                </div>
+            </div>
+            <button><span>Восстановить <i class="icon-left-arrow"></i></span></button>
+        </form>
+    </div>
+</div>
+
+<div class="mobile-menu">
+    <span class="close"></span>
+    <nav>
+        <span class="close-menu"></span>
+        <div class="personal-area active">
+            <a class="entrance_js" href="javascript:void(0)"></a>
+            <a class="area" href="personal-area.html"></a>
+            <i class="icon-user"></i>
+            <span class="entrance-text">Вход</span>
+            <span class="area-text">Иван Иванов</span>
+        </div>
+        <ul>
+            <li class="active"><a href="about-us.html">О нас</a></li>
+            <li>
+                <a href="javascript:void(0)">Программы</a>
+                <ul>
+                    <li><a href="programs.html">Внимание</a></li>
+                    <li><a href="programs.html">Память</a></li>
+                    <li><a href="programs.html">Мышление</a></li>
+                    <li><a href="programs.html">Речь</a></li>
+                    <li><a href="programs.html">Моторное развитие</a></li>
+                    <li><a href="programs.html">Восприятие</a></li>
+                    <li><a href="programs.html">Произвольная регуляция</a></li>
+                </ul>
+            </li>
+            <li><a href="shares.html">Акции</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+
+<header class="header">
+    <div class="header-bg"></div>
+    <div class="container">
+        <div class="header-content">
+            <div class="menu">
+                <span class="open-menu">
+                    <span></span>
+                </span>
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="about-us.html">О нас</a></li>
+                        <li>
+                            <a href="javascript:void(0)">Программы</a>
+                            <div class="drow">
+                                <ul>
+                                    <li data-drow="drow1" class="active"><a href="programs.html">Внимание</a></li>
+                                    <li data-drow="drow2"><a href="programs.html">Память</a></li>
+                                    <li data-drow="drow3"><a href="programs.html">Мышление</a></li>
+                                    <li data-drow="drow4"><a href="programs.html">Речь</a></li>
+                                    <li data-drow="drow5"><a href="programs.html">Моторное развитие</a></li>
+                                    <li data-drow="drow6"><a href="programs.html">Восприятие</a></li>
+                                    <li data-drow="drow7"><a href="programs.html">Произвольная регуляция</a></li>
+                                </ul>
+                                <div class="text drow1 active">
+                                    <h4>Внимание</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow2">
+                                    <h4>Память</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow3">
+                                    <h4>Мышление</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow4">
+                                    <h4>Речь</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow5">
+                                    <h4>Моторное развитие</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow6">
+                                    <h4>Восприятие</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                                <div class="text drow7">
+                                    <h4>Произвольная регуляция</h4>
+                                    <p>Развитие у ребёнка возможности сознательно управлять своим поведением, планировать, контролировать и выполнять действия.</p>
+                                    <a href="programs.html">Подробнее <i class="icon-left-arrow"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="shares.html">Акции</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user-basket">
+                <div>
+                    <a class="favorites" href="javascript:void(0)"><i class="icon-heart-empty"></i></a>
+                    <a class="basket" href="basket.html"><i class="icon-basket"></i><span><i>5</i></span></a>
+                </div>
+                <!-- Если есть класа active  при клике появиться попап если нет то переходит в кабинет -->
+                <div class="personal-area active">
+                    <a class="entrance_js" href="javascript:void(0)"></a>
+                    <a class="area" href="personal-area.html"></a>
+                    <span class="entrance-text">Вход</span>
+                    <span class="area-text">Иван Иванов</span>
+                    <i class="icon-user"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="">
+                <input type="search" placeholder="Поиск">
+                <button><i class="icon-search"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+
+    <section class="chapters">
+      <div class="container">
+        <div class="chapters-content">
+          <div class="selected">
+            <div class="chapters-item">
+              <div class="img"><img src="img/chapters-img1.png" alt=""></div>
+              <p>Внимание</p>
+            </div>
+          </div>
+          <div class="chapters-items">
+            <div class="chapters-item">
+              <a href="programs.html"></a>
+              <div class="img"><img src="img/chapters-img1.png" alt=""></div>
+              <p>Внимание</p>
+            </div>
+            <div class="chapters-item">
+              <a href="programs.html"></a>
+              <div class="img"><img src="img/chapters-img2.png" alt=""></div>
+              <p>Память</p>
+            </div>
+            <div class="chapters-item active">
+              <a href="programs.html"></a>
+              <div class="img"><img src="img/chapters-img3.png" alt=""></div>
+              <p>Мышление</p>
+            </div>
+            <div class="chapters-item">
+              <a href="programs.html"></a>
+              <div class="img"><img src="img/chapters-img4.png" alt=""></div>
+              <p>Речь</p>
+            </div>
+            <div class="chapters-item">
+              <a href="programs.html"></a>
+              <div class="img"><img src="img/chapters-img5.png" alt=""></div>
+              <p>Моторное развитие</p>
+            </div>
+            <div class="chapters-item">
+              <a href="programs.html"></a>
+              <div class="img"><img src="img/chapters-img6.png" alt=""></div>
+              <p>Восприятие</p>
+            </div>
+            <div class="chapters-item">
+              <a href="programs.html"></a>
+              <div class="img"><img src="img/chapters-img7.png" alt=""></div>
+              <p>Произвольная регуляция</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="programs.html">Мышление</a></li>
+                <li><span>Исключение предметов</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="program-internal">
+        <div class="container">
+            <div class="internal-content">
+                <div class="product">
+                    <div class="product-slider">
+                        <div class="product-nav">
+                            <div>
+                                <div class="img"><img src="img/programs-img1-1.png" alt=""></div>
+                            </div>
+                            <div>
+                                <div class="img"><img src="img/programs-img1-1.png" alt=""></div>
+                            </div>
+                            <div>
+                                <div class="img"><img src="img/programs-img1-1.png" alt=""></div>
+                            </div>
+                            <div>
+                              <div class="img"><img src="img/programs-img1-1.png" alt=""></div>
+                            </div>
+                            <div>
+                              <div class="img"><img src="img/programs-img1-1.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product-for">
+                            <div><img src="img/programs-img1-1.png" alt=""></div>
+                            <div><img src="img/programs-img1-1.png" alt=""></div>
+                            <div><img src="img/programs-img1-1.png" alt=""></div>
+                            <div><img src="img/programs-img1-1.png" alt=""></div>
+                            <div><img src="img/programs-img1-1.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="product-text">
+                        <h3>«Исключение предметов»</h3>
+                        <ul>
+                            <li>Развитие вербально - логического мыщления</li>
+                            <li>Развитие внимания</li>
+                            <li>Развитие памяти</li>
+                        </ul>
+                        <span class="code">Код: 1254689</span>
+                        <strong><i>Цена:</i> <span>259 руб.</span> 159 руб.</strong>
+                        <div class="link">
+                            <a class="download" href="javascript:void(0)"><span>Скачать<i class="icon-down-arrow"></i></span></a>
+                            <a class="heart" href="javascript:void(0)"><span>Отложить<i class="icon-heart-empty"></i></span></a>
+                            <a class="basket" href="javascript:void(0)"><span>В корзину<i class="icon-basket"></i></span></a>
+                            <a class="heart" href="javascript:void(0)"><span>Отложить<i class="icon-heart-empty"></i></span></a>
+                        </div>
+                        <ul class="method">
+                          <li><img src="img/visa.png" alt=""></li>
+                          <li><img src="img/MasterCard.png" alt=""></li>
+                          <li><img src="img/PayPal.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description">
+                    <article>
+                        <h5>Lorem Ipsum - это текст-"рыба"</h5>
+                        <p>часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на 
+                            латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров 
+                            и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно 
+                            пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации 
+                            в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более 
+                            недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется 
+                            Lorem Ipsum.</p>
+                    </article>
+                    <article>
+                        <h5>Lorem Ipsum - это текст-"рыба"</h5>
+                        <p>часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на 
+                            латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров 
+                            и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно 
+                            пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации 
+                            в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более 
+                            недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется 
+                            Lorem Ipsum.</p>
+                    </article>
+                    <article>
+                        <h5>Lorem Ipsum - это текст-"рыба"</h5>
+                        <p>часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на 
+                            латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров 
+                            и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно 
+                            пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации 
+                            в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более 
+                            недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется 
+                            Lorem Ipsum.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interest">
+        <div class="container">
+          <div class="title">
+            <h2>Вас может заинтересовать</h2>
+            <span></span>
+          </div>
+          <div class="programs-content">
+            <div class="sliders">
+              <div class="programs-slider">
+                <div class="rograms-item">
+                  <a class="favorites-link" href="javascript:void(0)">
+                    <i class="icon-heart-empty"></i>
+                    <i class="icon-heart"></i>
+                  </a>
+                  <div class="img">
+                    <i class="icon-shares"></i>
+                    <img src="img/programs-img6.png" alt="">
+                  </div>
+                  <div class="text">
+                    <h4>«Исключение предметов»</h4>
+                    <ul>
+                      <li>Мышление</li>
+                      <li>Внимание</li>
+                      <li>Зрительная память</li>
+                    </ul>
+                    <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                  </div>
+                </div>
+                <div class="rograms-item">
+                  <a class="favorites-link" href="javascript:void(0)">
+                    <i class="icon-heart-empty"></i>
+                    <i class="icon-heart"></i>
+                  </a>
+                  <div class="img">
+                    <i class="icon-shares"></i>
+                    <img src="img/programs-img5.png" alt="">
+                  </div>
+                  <div class="text">
+                    <h4>«Исключение предметов»</h4>
+                    <ul>
+                      <li>Мышление</li>
+                      <li>Внимание</li>
+                      <li>Зрительная память</li>
+                    </ul>
+                    <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                  </div>
+                </div>
+                <div class="rograms-item">
+                  <a class="favorites-link" href="javascript:void(0)">
+                    <i class="icon-heart-empty"></i>
+                    <i class="icon-heart"></i>
+                  </a>
+                  <div class="img">
+                    <i class="icon-shares"></i>
+                    <img src="img/programs-img4.png" alt="">
+                  </div>
+                  <div class="text">
+                    <h4>«Исключение предметов»</h4>
+                    <ul>
+                      <li>Мышление</li>
+                      <li>Внимание</li>
+                      <li>Зрительная память</li>
+                    </ul>
+                    <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                  </div>
+                </div>
+                <div class="rograms-item">
+                  <a class="favorites-link" href="javascript:void(0)">
+                    <i class="icon-heart-empty"></i>
+                    <i class="icon-heart"></i>
+                  </a>
+                  <div class="img">
+                    <i class="icon-shares"></i>
+                    <img src="img/programs-img3.png" alt="">
+                  </div>
+                  <div class="text">
+                    <h4>«Исключение предметов»</h4>
+                    <ul>
+                      <li>Мышление</li>
+                      <li>Внимание</li>
+                      <li>Зрительная память</li>
+                    </ul>
+                    <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                  </div>
+                </div>
+                <div class="rograms-item">
+                  <a class="favorites-link" href="javascript:void(0)">
+                    <i class="icon-heart-empty"></i>
+                    <i class="icon-heart"></i>
+                  </a>
+                  <div class="img">
+                    <i class="icon-shares"></i>
+                    <img src="img/programs-img2.png" alt="">
+                  </div>
+                  <div class="text">
+                    <h4>«Исключение предметов»</h4>
+                    <ul>
+                      <li>Мышление</li>
+                      <li>Внимание</li>
+                      <li>Зрительная память</li>
+                    </ul>
+                    <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                  </div>
+                </div>
+                <div class="rograms-item">
+                  <a class="favorites-link" href="javascript:void(0)">
+                    <i class="icon-heart-empty"></i>
+                    <i class="icon-heart"></i>
+                  </a>
+                  <div class="img">
+                    <i class="icon-shares"></i>
+                    <img src="img/programs-img1.png" alt="">
+                  </div>
+                  <div class="text">
+                    <h4>«Исключение предметов»</h4>
+                    <ul>
+                      <li>Мышление</li>
+                      <li>Внимание</li>
+                      <li>Зрительная память</li>
+                    </ul>
+                    <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                  </div>
+                </div>
+                <div class="rograms-item">
+                  <a class="favorites-link" href="javascript:void(0)">
+                    <i class="icon-heart-empty"></i>
+                    <i class="icon-heart"></i>
+                  </a>
+                  <div class="img">
+                    <i class="icon-shares"></i>
+                    <img src="img/programs-img1.png" alt="">
+                  </div>
+                  <div class="text">
+                    <h4>«Исключение предметов»</h4>
+                    <ul>
+                      <li>Мышление</li>
+                      <li>Внимание</li>
+                      <li>Зрительная память</li>
+                    </ul>
+                    <a href="program-internal.html"><span>Подробнее <i class="icon-left-arrow"></i></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-nav"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="register-form">
+    <div class="container">
+      <div class="register-content">
+        <div class="text">
+            <h4>Зарегистрироваться на сайте</h4>
+            <p>И получите доступ к нашей коллекции развивающих программ</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="E-mail">
+            <button><span>Продолжить<i class="icon-left-arrow"></i></span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-nav">
+            <nav>
+                <ul>
+                    <li><a href="about-us.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="page-text.html">Сотрудничество</a></li>
+                    <li><a href="partners.html">Партнёры</a></li>
+                </ul>
+            </nav>
+            <div class="program-nav">
+                <ul>
+                    <li><a href="javascript:void(0)">Внимание</a></li>
+                    <li><a href="javascript:void(0)">Память</a></li>
+                    <li><a href="javascript:void(0)">Мышление</a></li>
+                    <li><a href="javascript:void(0)">Речь</a></li>
+                    <li><a href="javascript:void(0)">Моторное развитие</a></li>
+                    <li><a href="javascript:void(0)">Восприятие</a></li>
+                    <li><a href="javascript:void(0)">Произвольная регуляция</a></li>
+                </ul>
+            </div>
+            <div class="data-nav">
+                <ul>
+                    <li><a href="javascript:void(0)">Возврат</a></li>
+                    <li><a href="javascript:void(0)">Публичная оферта</a></li>
+                    <li><a href="javascript:void(0)">Персональные данные</a></li>
+                    <li><a class="support_js" href="javascript:void(0)">Служба поддержки</a></li>
+                </ul>
+            </div>
+            <div class="social-shares">
+                <ul class="shares">
+                    <li><a href="shares.html">Акции</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                </ul>
+                <p>NeuroGame в социальных сетях</p>
+                <ul class="social">
+                    <li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-fb"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-vk"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <ul>
+                <li><img src="img/visa.png" alt=""></li>
+                <li><img src="img/MasterCard.png" alt=""></li>
+                <li><img src="img/PayPal.png" alt=""></li>
+            </ul>
+            <p>© 2020. NeuroGame</p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Скрипты -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.matchHeight.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/programs.min.js"></script>
+
+</body>
+
+</html>
