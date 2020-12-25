@@ -267,7 +267,7 @@
                     margin-bottom: 22px;
                     img {
                         width: auto;
-                        max-width: 67px;
+                        max-width: 76px;
                     }
                 }
                 p {
@@ -554,12 +554,79 @@
                         &:last-child{
                             margin-bottom: 0;
                         }
+                        .jcf-option{
+                            width: 100%;
+                            cursor: pointer;
+                            font-size: 16px;
+                            color: #5F6470;
+                            line-height: 18px;
+                            display: inline-block; 
+                            transition: all 0.5s;
+                        }
+                        .jcf-option.jcf-selected{
+                            color: #f14942;
+                        }
                         a{
                             width: 100%;
                             font-size: 16px;
                             color: #5F6470;
                             line-height: 18px;
                             display: inline-block;
+                        }
+                    }
+                }
+                .jcf-select{
+                    display: block;
+                    padding-bottom: 20px;
+                    .jcf-select-text{
+                        width: 100%;
+                        display: block;
+                        cursor: pointer;
+                        position: relative;
+                        border-radius: 20px;
+                        background: #F2F7FD;
+                        padding: 10px 30px 7px 17px;
+                        border: 2px solid #C7CEDC;
+                        &::after{
+                            content: '\E819';
+                            top: 55%;
+                            right: 11px;
+                            font-size: 6px;
+                            color: #C7CEDC;
+                            position: absolute;
+                            font-family: 'fontello';
+                            transform: translate(0, -50%);
+                            transition: all 0.5s;
+                        }
+                        span{
+                            display: block;
+                            font-size: 18px;
+                            color: #5F6470;
+                            overflow: hidden;
+                            line-height: 22px;
+                            padding-left: 24px;
+                            white-space: nowrap;
+                            position: relative;
+                            text-overflow: ellipsis;
+                            &::after{
+                                content: '';
+                                left: 0;
+                                top: 45%;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                position: absolute;
+                                background: #F14942;
+                                box-shadow: 0 2px 3px rgba(241, 73, 66, 0.58);
+                                transform: translate(0, -50%);
+                            }
+                        }
+                    }
+                }
+                .jcf-drop-active {
+                    .jcf-select-text{
+                        &::after{
+                            transform: translate(0, -50%) rotate(180deg);
                         }
                     }
                 }
@@ -840,7 +907,7 @@
                         width: 45%;
                         padding-right: 10px;
                         h4{
-                            padding-right: 10px;
+                            padding-right: 15px;
                         }
                         ul{
                             margin-bottom: 10px;
@@ -1022,6 +1089,7 @@
                         h4{
                             font-size: 20px;
                             line-height: 21px;
+                            padding-right: 30px;
                         }
                         ul {
                             margin-bottom: 28px;
@@ -1936,7 +2004,7 @@
                         width: 45%;
                         padding-right: 10px;
                         h4{
-                            padding-right: 10px;
+                            padding-right: 15px;
                         }
                         ul{
                             margin-bottom: 10px;
@@ -2097,6 +2165,7 @@
                         h4{
                             font-size: 20px;
                             line-height: 21px;
+                            padding-right: 30px;
                         }
                         ul {
                             margin-bottom: 28px;

@@ -21,6 +21,14 @@ $(document).ready(function(){
         byRow: false
     }); 
 
+    $('.rograms-item .text h4').matchHeight({
+        byRow: false
+    }); 
+
+    $('.rograms-item .text ul').matchHeight({
+        byRow: false
+    }); 
+
     if($(window).width() > 660){
 
         $('.why-we-slider').slick('unslick');

@@ -9,6 +9,14 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
 
+    $('.rograms-item .text h4').matchHeight({
+        byRow: false
+    }); 
+
+    $('.rograms-item .text ul').matchHeight({
+        byRow: false
+    }); 
+
 });
 
 $(window).resize(function(){

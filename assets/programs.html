@@ -169,7 +169,7 @@
                         </div>
                     </form>
                     <div class="sort">
-                        <div class="item">
+                        <!-- <div class="item">
                             <p>Сортировать</p>
                         </div>
                         <ul>
@@ -178,7 +178,15 @@
                             <li><a href="javascript:void(0)">Сортировать 3</a></li>
                             <li><a href="javascript:void(0)">Сортировать 4</a></li>
                             <li><a href="javascript:void(0)">Сортировать Сортировать 5</a></li>
-                        </ul>
+                        </ul> -->
+                        <select class="item" id="sorting_filters" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: false}" name="sorting">
+                            <option value=""> По умолчанию </option>
+                            <option value="sorting=asc">От А-Я</option>
+                            <option value="sorting=desc">От Я-А</option>
+                            <option value="sorting=price_to_big">По цене ↑</option>
+                            <option value="sorting=price_to_small">По цене ↓</option>
+                            <option value="sorting=popularity">По популярности</option>  
+                        </select>
                     </div>
                 </div>
                 <div class="rograms-items">
@@ -369,6 +377,8 @@
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.matchHeight.min.js"></script>
+  <script src="js/jcf.min.js"></script>
+  <script src="js/jcf.select.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.min.js"></script>
   <script src="js/programs.min.js"></script>
