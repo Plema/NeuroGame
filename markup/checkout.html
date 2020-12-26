@@ -142,7 +142,7 @@
         <ul>
             <li class="active"><a href="about-us.html">О нас</a></li>
             <li>
-                <a href="javascript:void(0)">Программы</a>
+                <a href="хуй">Программы</a>
                 <ul>
                     <li><a href="programs.html">Внимание</a></li>
                     <li><a href="programs.html">Память</a></li>
@@ -292,51 +292,123 @@
                 <div class="total-amount">
                     <p>Итого: <strong>300 руб.</strong></p>
                 </div>
-                <form action="">
-                    <div class="form-item">
-                        <div class="inputs">
-                            <div class="input">
-                                <span>Имя</span>
-                                <label><i class="icon-form-user"></i><input type="text"></label>
-                            </div>
-                            <div class="input">
-                                <span>Фамилия</span>
-                                <label><i class="icon-form-user"></i><input type="text"></label>
-                            </div>
-                        </div>
-                        <div class="inputs">
-                            <div class="input">
-                                <span>E-mail</span>
-                                <label><i class="icon-form-mail"></i><input type="text"></label>
-                            </div>
-                            <div class="input">
-                                <span>Телефон</span>
-                                <label><i class="icon-form-tel"></i><input type="text"></label>
-                            </div>
-                        </div>
-                        <div class="inputs">
-                            <div class="input">
-                                <span>Страна</span>
-                                <label>
-                                    <select>
-                                        <option>Страна 1</option>
-                                        <option>Страна 2</option>
-                                        <option>Страна 3</option>
-                                        <option>Страна 4</option>
-                                        <option>Страна 5</option>
-                                        <option>Страна 6</option>
-                                        <option>Страна 7</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div class="input">
-                                <span>Город</span>
-                                <label><input type="text"></label>
-                            </div>
-                        </div>
-                    </div>
-                    <button>Оплатить через PayPal</button>
-                </form>
+                <form name="checkout" method="post" class="checkout woocommerce-checkout" action="https://neurogame.pro/checkout/" enctype="multipart/form-data" novalidate="novalidate" style="zoom: 1;"><div class="woocommerce-NoticeGroup woocommerce-NoticeGroup-checkout checkout-neuro"><!-- FILE: woocommerce/notices/error.php -->
+                    <ul class="woocommerce-error error-neuro" role="alert">
+                                <li>
+                                Платеж не прошел. Попробуйте еще или выберите другой способ оплаты		</li>
+                        </ul>
+                    <!-- END: FILE: woocommerce/notices/error.php --></div>
+                    
+                                    <div class="form-item">
+                                        <!-- Данные пользователя -->
+                                        <!-- checkout\form-billing -->
+                    
+                        <div class="inputs"><div class="input">
+                                            <span>Имя</span>
+                                            <label>
+                                                <i class="icon-form-user"></i>
+                                                <input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="Test" autocomplete="given-name">
+                                            </label>
+                                        </div><div class="input">
+                                            <span>Фамилия</span>
+                                            <label>
+                                                <i class="icon-form-user"></i>
+                                                <input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="Test" autocomplete="family-name">
+                                            </label>
+                                        </div></div><div class="inputs"><div class="input">
+                                            <span>Телефон</span>
+                                            <label>
+                                                <i class="icon-form-tel"></i>
+                                                <input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" value="780000000000" autocomplete="tel">
+                                            </label>
+                                        </div><div class="input">
+                                            <span>E-mail</span>
+                                            <label>
+                                                <i class="icon-form-mail"></i>
+                                                <input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" value="alexandr.shvets1996@gmail.com" autocomplete="email username">
+                                            </label>
+                                        </div></div><!-- END: checkout\form-billing -->					<!-- Методы оплаты -->
+                                        <!-- checkout\payment.php -->
+                    
+                    
+                            
+                                
+                                
+                                        <!-- checkout\payment.php -->
+                    
+                    
+                            
+                                
+                                
+                                    <div class="inputs">
+                                        <div id="payment" class="input woocommerce-checkout-payment">
+                                            <span>Методы оплаты</span>
+                                            <label>
+                                                <select name="payment_method" class="wc_payment_methods payment_methods methods">
+                                                    <option id="payment_method_ym_api_widget" class="input-radio" value="ym_api_widget" checked="checked" data-order_button_text="">Банковские карты, Apple Pay, Google Pay </option>
+                                                    <option id="payment_method_ym_api_bank_card" class="input-radio" value="ym_api_bank_card" data-order_button_text="">Банковские карты — Visa, Mastercard и Maestro, «Мир» </option>
+                                                    <option id="payment_method_ym_api_sberbank" class="input-radio" value="ym_api_sberbank" data-order_button_text="">Оплата через Сбербанк </option>
+                                                    <option id="payment_method_ym_api_wallet" class="input-radio" value="ym_api_wallet" data-order_button_text="">Кошелек Яндекс.Деньги </option>
+                                                    <option id="payment_method_ym_api_tinkoff" class="input-radio" value="ym_api_tinkoff" data-order_button_text="">Интернет-банк Тинькофф </option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="input">
+                                            <!--<span>Город</span>
+                                            <label><input type="text"></label>-->
+                                        </div>
+                                    </div>	
+                            <!--<div class="form-row place-order">-->
+                            <!-- <noscript>
+                                            
+                                <br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value=""></button>
+                            
+                            </noscript> -->
+                    
+                                    <!-- do_action woocommerce_review_order_before_submit -->
+                                    <!-- END: do_action woocommerce_review_order_before_submit -->
+                    
+                            <!-- apply_filters woocommerce_order_button_html -->
+                                    <!-- END: apply_filters woocommerce_order_button_html -->
+                    
+                            <!-- do_action woocommerce_review_order_after_submit -->
+                                    <!-- END: do_action woocommerce_review_order_after_submit -->
+                            <!-- wp_nonce_field woocommerce-process_checkout -->
+                            <input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="060a621cc9"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">		<!-- END: wp_nonce_field woocommerce-process_checkout -->
+                        <!--</div>
+                    </div>-->
+                    
+                    <!-- END: checkout\payment.php -->
+                    
+                                        <div class="input">
+                                            <!--<span>Город</span>
+                                            <label><input type="text"></label>-->
+                                        </div>
+                                    </div>	
+                            <!--<div class="form-row place-order">-->
+                            <!-- <noscript>
+                                            
+                                <br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value=""></button>
+                            
+                            </noscript> -->
+                    
+                                    <!-- do_action woocommerce_review_order_before_submit -->
+                                    <!-- END: do_action woocommerce_review_order_before_submit -->
+                    
+                            <!-- apply_filters woocommerce_order_button_html -->
+                                    <!-- END: apply_filters woocommerce_order_button_html -->
+                    
+                            <!-- do_action woocommerce_review_order_after_submit -->
+                                    <!-- END: do_action woocommerce_review_order_after_submit -->
+                            <!-- wp_nonce_field woocommerce-process_checkout -->
+                            <input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="060a621cc9"><input type="hidden" name="_wp_http_referer" value="/checkout/">		<!-- END: wp_nonce_field woocommerce-process_checkout -->
+                        <!--</div>
+                    </div>-->
+                    
+                    <!-- END: checkout\payment.php -->
+                                    <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Подтвердить заказ" data-value="Подтвердить заказ">Оплатить</button>
+                                    
+                                </form>
             </div>
         </div>
     </section>

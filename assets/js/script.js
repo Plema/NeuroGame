@@ -46,6 +46,7 @@ $(document).ready(function(){
     });
 
     $('.mobile-menu ul li ul').parent().addClass('drop');
+    $('.mobile-menu .drop a').first().attr('href', 'javascript:void(0)');
 
     var footerHeight = $('.footer').height();
 

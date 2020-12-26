@@ -88,6 +88,13 @@
                 font-family: 'fontello';
                 transform: translate(0, -50%);
             }
+            a{
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
             .img{
                 max-width: 25px;
                 margin-right: 34px;
@@ -736,6 +743,13 @@
                             transform: translate(-50%, -50%);
                         }
                     }
+                    .icon-free{
+                        font-size: 10px;
+                        color: #FFFFFF;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Conv_CirceBold';
+                    }
                     img{
                         width: 100%;
                         display: block;
@@ -789,8 +803,15 @@
             }
             .sale{
                 .img{
-                    i{
+                    .icon-shares{
                         display: block;
+                    }
+                }
+            }
+            .free{
+                .img{
+                    .icon-free{
+                        display: flex;
                     }
                 }
             }
@@ -1042,6 +1063,9 @@
                             &::before {
                                 font-size: 18px;
                             }
+                        }
+                        .icon-free {
+                            font-size: 12px;
                         }
                     }
                 }
@@ -1821,6 +1845,13 @@
                             transform: translate(-50%, -50%);
                         }
                     }
+                    .icon-free{
+                        font-size: 10px;
+                        color: #FFFFFF;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Conv_CirceBold';
+                    }
                 }
                 .text{
                     h4{
@@ -1870,8 +1901,15 @@
             }
             .sale{
                 .img{
-                    i{
+                    .icon-shares{
                         display: block;
+                    }
+                }
+            }
+            .free{
+                .img{
+                    .icon-free{
+                        display: flex;
                     }
                 }
             }
@@ -2121,6 +2159,9 @@
                             &::before {
                                 font-size: 18px;
                             }
+                        }
+                        .icon-free {
+                            font-size: 12px;
                         }
                     }
                 }
