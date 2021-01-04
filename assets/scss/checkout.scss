@@ -380,3 +380,41 @@
         }
     }
 }
+
+.woocommerce-order{
+    text-align: center;
+    p{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    ul{
+        margin-bottom: 20px;
+        li{
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    button{
+        height: 43px;
+        display: table;
+        margin: 0 auto;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 24px;
+        padding: 10px 24px;
+        text-align: center;
+        border-radius: 30px;
+        background: #F14942;
+        border: 2px solid #F14942;
+        transition: all 0.3s;
+        &:hover{
+            color: #F14942;
+            background: transparent;
+        }
+    }
+}
