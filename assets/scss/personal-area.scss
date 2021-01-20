@@ -243,6 +243,22 @@
                 }
                 .input{
                     margin-bottom: 18px;
+                    position: relative;
+                    .eye{
+                        z-index: 2;
+                        right: 10px;
+                        bottom: 8px;
+                        font-size: 20px;
+                        color: #7993b3;
+                        position: absolute;
+                        transition: all 0.3s;
+                        i{
+                            position: static;
+                        }
+                        &:hover{
+                            color: #f14942;
+                        }
+                    }
                     &:last-child{
                         margin-bottom: 0;
                     }

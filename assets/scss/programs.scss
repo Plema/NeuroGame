@@ -72,6 +72,7 @@
         .chapters-item{
             z-index: 1;
             display: flex;
+            min-height: 58px;
             overflow: hidden;
             position: relative;
             align-items: center;
@@ -145,6 +146,13 @@
             }
             &:last-child{
                 border-bottom: none;
+            }
+            a{
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
             }
             .img{
                 max-width: 25px;
@@ -749,6 +757,15 @@
                         align-items: center;
                         justify-content: center;
                         font-family: 'Conv_CirceBold';
+                        box-shadow: none;
+                        background: transparent;
+                        img{
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                        }
                     }
                     img{
                         width: 100%;

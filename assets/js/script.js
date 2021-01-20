@@ -75,6 +75,18 @@ $(document).ready(function(){
         $(this).toggleClass('open');
     });
 
+    $('.eye').on('click', function(){
+        var that = $(this).prev('input');
+        if(that.attr('type') === 'password'){
+            that.attr('type', 'text');
+        }
+        else{
+            that.attr('type', 'password');
+        }
+    });
+
+    $('.phone').mask('+7 (000) 000 00 00', {placeholder: "+7 (___) ___ __ __"});
+
 });
 
 $(window).resize(function(){

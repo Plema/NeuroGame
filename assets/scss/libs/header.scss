@@ -371,6 +371,21 @@
                     background: #FFFFFF;
                     border: 1px solid #DBE3F3;
                 }
+                div{
+                    position: relative;
+                    .eye{
+                        z-index: 2;
+                        right: 10px;
+                        bottom: 28px;
+                        color: #535c67;
+                        font-size: 20px;
+                        position: absolute;
+                        transition: all 0.3s;
+                        &:hover{
+                            color: #f14942;
+                        }
+                    }
+                }
             }
             button{
                 display: table;
@@ -720,6 +735,21 @@
                 }
                 input::placeholder {
                     opacity: 0.5;
+                }
+                div{
+                    position: relative;
+                    .eye{
+                        z-index: 2;
+                        right: 10px;
+                        bottom: 28px;
+                        color: #535c67;
+                        font-size: 20px;
+                        position: absolute;
+                        transition: all 0.3s;
+                        &:hover{
+                            color: #f14942;
+                        }
+                    }
                 }
             }
             .forgot{
@@ -1263,7 +1293,7 @@
                             font-size: 16px;
                             color: #335872;
                             line-height: 18px;
-                            padding: 3px 16px;
+                            padding: 3px 16px 7px;
                             position: relative;
                             display: inline-block;
                             &::after{
@@ -1271,7 +1301,7 @@
                             }
                             &::before{
                                 content: '';
-                                top: 45%;
+                                top: 37%;
                                 left: 0;
                                 width: 6px;
                                 height: 6px;

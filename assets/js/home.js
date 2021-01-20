@@ -21,14 +21,6 @@ $(document).ready(function(){
         byRow: false
     }); 
 
-    $('.rograms-item .text h4').matchHeight({
-        byRow: false
-    }); 
-
-    $('.rograms-item .text ul').matchHeight({
-        byRow: false
-    }); 
-
     if($(window).width() > 660){
 
         $('.why-we-slider').slick('unslick');
@@ -79,6 +71,18 @@ $(document).ready(function(){
     $('.favorites-link').on('click', function(){
         $(this).toggleClass('active');
     });
+
+    $('.rograms-item .text h4').matchHeight({
+        byRow: true
+    }); 
+
+    // $('.rograms-item .text').matchHeight({
+    //     byRow: false
+    // }); 
+
+    $('.rograms-item .text ul').matchHeight({
+        byRow: false
+    }); 
 
 
 
