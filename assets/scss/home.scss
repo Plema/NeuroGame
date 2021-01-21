@@ -1096,6 +1096,8 @@
                     h4{
                         font-size: 16px;
                         color: #414550;
+                        max-height: 35px;
+                        overflow: hidden;
                         line-height: 17px;
                         margin-bottom: 10px;
                         font-family: 'Conv_CirceBold';
@@ -1456,6 +1458,7 @@
                         padding-right: 0;
                         h4{
                             font-size: 20px;
+                            max-height: 48px;
                             line-height: 21px;
                             padding-right: 30px;
                             margin-bottom: 20px;

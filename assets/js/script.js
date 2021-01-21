@@ -85,7 +85,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.phone').mask('+0 (000) 000 00 00', {placeholder: "+0 (___) ___ __ __"});
+    $('.phone').mask('+00 (000) 000 00 00', {placeholder: "+00 (___) ___ __ __"});
 
 });
 

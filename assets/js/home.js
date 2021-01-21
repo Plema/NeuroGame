@@ -73,7 +73,7 @@ $(document).ready(function(){
     });
 
     $('.rograms-item .text h4').matchHeight({
-        byRow: true
+        byRow: false
     }); 
 
     // $('.rograms-item .text').matchHeight({
