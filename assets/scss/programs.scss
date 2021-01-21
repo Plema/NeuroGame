@@ -150,6 +150,7 @@
             a{
                 top: 0;
                 left: 0;
+                z-index: 3;
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -1567,6 +1568,15 @@
             }
         }
     }
+    .free-product {
+        .product-text {
+            .link {
+                .heart{
+                    display: none;
+                }
+            }
+        }
+    }
     .description{
         article{
             margin-bottom: 30px;
@@ -1626,6 +1636,15 @@
                 }
                 .method{
                     justify-content: end;
+                }
+            }
+        }
+        .free-product {
+            .product-text {
+                .link {
+                    .download{
+                        width: 75%;
+                    }
                 }
             }
         }

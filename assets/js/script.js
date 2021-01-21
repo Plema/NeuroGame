@@ -100,3 +100,5 @@ $(window).resize(function(){
     });
     
 });
+
+$(window).on('resize',function(){location.reload();});
