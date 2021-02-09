@@ -64,6 +64,12 @@ $(document).ready(function(){
 
     $('.selected').on('click', function(){
         $('.chapters-items').addClass('active');
+        $('.selected-close').addClass('active');
+    });
+
+    $('.selected-close').on('click', function(){
+        $('.chapters-items').removeClass('active');
+        $('.selected-close').removeClass('active');
     });
 
     $('.chapters-items .chapters-item').on('click', function(){
@@ -103,6 +109,6 @@ $(window).resize(function(){
 
 
 
-window.addEventListener("orientationchange", function() {
-    location.reload()
-}, false);
+// window.addEventListener("orientationchange", function() {
+//     location.reload()
+// }, false);

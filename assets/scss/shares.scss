@@ -47,10 +47,16 @@
     }
 }
 
+
 .chapters {
     z-index: 5;
     position: relative;
     padding: 14px 0 25px;
+    .chapters-content{
+        width: 288px;
+        margin: 0 auto;
+        position: relative;
+    }
     .selected{
         width: 288px;
         margin: 0 auto;
@@ -69,8 +75,8 @@
         }
         .chapters-item{
             z-index: 1;
-            display: flex;
             min-height: 58px;
+            display: flex;
             overflow: hidden;
             position: relative;
             align-items: center;
@@ -96,7 +102,7 @@
             }
             .img{
                 max-width: 25px;
-                margin-right: 34px;
+                margin-right: 15px;
                 img{
                     display: block;
                     max-width: 100%;
@@ -117,31 +123,21 @@
         width: 288px;
         display: none;
         overflow: hidden;
+        padding: 6px 18px;
         position: absolute;
-        padding: 8px 20px;
         border-radius: 10px;
         background: #FFFFFF;
         transform: translate(-50%, 0);
+        box-shadow: 0 8px 20px #8e8e8e;
         .chapters-item{
             z-index: 1;
             display: flex;
             overflow: hidden;
             position: relative;
             align-items: center;
-            padding: 12px 35px 12px 1px;
+            margin-bottom: 5px;
+            padding: 5px 30px 10px 1px;
             border-bottom: 1px solid #DDE5F3;
-            &:first-child{
-                &::after{
-                    content: '\E819';
-                    top: 50%;
-                    right: 11px;
-                    font-size: 8px;
-                    color: #7C7D9C;
-                    position: absolute;
-                    font-family: 'fontello';
-                    transform: translate(0, -50%) rotate(180deg);
-                }
-            }
             &:last-child{
                 border-bottom: none;
             }
@@ -155,7 +151,7 @@
             }
             .img{
                 max-width: 25px;
-                margin-right: 34px;
+                margin-right: 15px;
                 img{
                     display: block;
                     max-width: 100%;
@@ -172,13 +168,47 @@
     .chapters-items.active{
         display: block;
     }
+    .selected-close{
+        top: 12px;
+        z-index: 4;
+        right: 2px;
+        width: 34px;
+        height: 34px;
+        display: none;
+        position: absolute;
+        &::after{
+            content: '\E819';
+            top: 50%;
+            left: 50%;
+            font-size: 8px;
+            color: #7C7D9C;
+            position: absolute;
+            font-family: 'fontello';
+            transform: translate(-50%, -50%);
+            transition: all 0.3s;
+        }
+    }
+    .selected-close.active{
+        display: block;
+        &::after{
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+    }
     @media (min-width: 400px) {
         padding: 5px 0 25px;
+        .chapters-content {
+            width: 330px;
+            margin: 0 auto;
+            position: relative;
+        }
         .selected {
             width: 330px;
         }
         .chapters-items{
             width: 330px;
+        }
+        .selected-close {
+            right: 2px;
         }
     }
     @media (min-width: 768px) {
@@ -187,6 +217,9 @@
     @media (min-width: 1024px) {
         z-index: 3;
         padding: 50px 0 40px;
+        .chapters-content {
+            width: auto;
+        }
         .selected{
             display: none;
         }
@@ -197,6 +230,7 @@
             background: transparent;
             transform: translate(0, 0);
             justify-content: space-between;
+            box-shadow: none;
             .chapters-item{
                 padding: 0;
                 width: 90px;
