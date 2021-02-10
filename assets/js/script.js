@@ -73,6 +73,10 @@ $(document).ready(function(){
     });
 
     $('.chapters-items .chapters-item').on('click', function(){
+        $('.selected-close').removeClass('active');
+    });
+
+    $('.chapters-items .chapters-item').on('click', function(){
         $('.selected .chapters-item').html($(this).html());
         $('.chapters-items').removeClass('active');
     });
